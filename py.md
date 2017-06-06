@@ -1,6 +1,6 @@
 ## py
 
-```python=
+```python
 try:
     # do whatever ya wanna do
 except:
@@ -8,7 +8,7 @@ except:
     pass
 ```
 
-```python=
+```python
 >>> lst = [True, True, False]
 >>> all(lst)
 False
@@ -16,7 +16,7 @@ False
 True
 ```
 
-```python=
+```python
 >>> lst = [1, 2, 3]
 >>> tup = (1, 2, 3)
 >>> dic = {1: 1, 2: 2, 3: 3}
@@ -40,7 +40,7 @@ True
 3
 ```
 
-```python=
+```python
 >>> for n in range(4, 8):
 ...     print(n)
 ...
@@ -50,7 +50,7 @@ True
 7
 ```
 
-```python=
+```python
 >>> def add(*tup):
 ...     print(tup)
 ...     return sum(tup)
@@ -60,7 +60,7 @@ True
 6
 ```
 
-```python=
+```python
 >>> def power(base, exp):
 ...     return base ** exp
 ...
@@ -69,7 +69,7 @@ True
 8
 ```
 
-```python=
+```python
 >>> def test(*args, **kwargs):
 ...     print(args)
 ...     print(kwargs)
@@ -79,7 +79,7 @@ True
 {'fuck': 'you'}
 ```
 
-```python=
+```python
 class Husky:
     def __init__(self, name):
         self.name = name
