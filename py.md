@@ -87,8 +87,42 @@ class Husky:
         print('{}:'.format(self.name), 'Fuck!')
 
 remy = Husky('Remy')
+# The line above it'a actually doing something like:
+# Husky.__init__(remy, 'Remy')
 print('Remy sit.')
 print('Speak!')
 remy.speak()
 print('Good boy!')
+```
+
+```python
+# inheritance, polymorphism
+class Dog:
+    def __init__(self, name):
+        self.name = name
+    def run(self):
+        print(self.name, "run")
+
+class Husky(Dog):
+    def bark(self):
+        print(self.name, "barks:", "Fuck!")
+
+class Schnauzer(Dog):
+    def bark(self):
+        print(self.name, "barks:", "Bark!")
+```
+
+```python
+# namespace
+>>> dir()
+['__builtins__', '__doc__', '__name__', '__package__']
+```
+
+```python
+>>> def test():
+...     foo = "bar"
+...     baz = {'qux': 'qux'}
+...
+>>> test()
+{'baz': {'qux': 'qux'}, 'foo': 'bar'}
 ```
