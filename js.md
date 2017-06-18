@@ -6,7 +6,7 @@ console.log(game)
 ```
 
 ```js
-Array.from([1, 2, 3], x => x * 2);
+Array.from([1, 2, 3], x => x * 2)
 // [2, 4, 6]
 
 Array.from({length: 5}, (v, i) => i)
