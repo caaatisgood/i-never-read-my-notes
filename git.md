@@ -1,0 +1,1 @@
+`q` to quit `git log`
