@@ -126,3 +126,8 @@ class Schnauzer(Dog):
 >>> test()
 {'baz': {'qux': 'qux'}, 'foo': 'bar'}
 ```
+
+```python
+>>> isinstance('fuck you', str)
+True
+```
