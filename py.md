@@ -131,3 +131,15 @@ class Schnauzer(Dog):
 >>> isinstance('fuck you', str)
 True
 ```
+
+```python
+>>> truth = ['ben', 'loves', 'to', 'eat', 'shit']
+>>> for i, e in enumerate(truth):
+...    print(i, e)
+...
+0 ben
+1 loves
+2 to
+3 eat
+4 shit
+```
