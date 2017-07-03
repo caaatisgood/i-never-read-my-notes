@@ -21,3 +21,20 @@ function foo (param1, param2) {
 foo(8, 7)
 // 8 and 7 are arguments
 ```
+---
+
+Node.js
+```js
+import util from 'util'
+const obj = {
+  it: 'will',
+  print: {
+    out: {
+      like: ['literally'],
+      the: 'whole'
+    }
+  },
+  extended: 'object'
+}
+console.log(util.inspect(obj, false, null))
+```
