@@ -21,6 +21,22 @@ function foo (param1, param2) {
 foo(8, 7)
 // 8 and 7 are arguments
 ```
+
+```js
+(async function a () {
+  const r = await Promise.race([
+    new Promise((resolve, reject) => {
+      setTimeout(resolve, 2000, 'foo')
+    }),
+    new Promise((resolve, reject) => {
+      setTimeout(resolve, 1000, 'bar')
+    })
+  ])
+  console.log(r)
+})()
+
+// bar
+```
 ---
 
 Node.js
