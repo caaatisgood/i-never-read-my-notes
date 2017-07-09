@@ -41,16 +41,16 @@ foo(8, 7)
 
 Node.js
 ```js
-import util from 'util'
+const util = require('util')
 const obj = {
   it: 'will',
   print: {
-    out: {
-      like: ['literally'],
-      the: 'whole'
+    out: {
+      the: ['full', 'object']
     }
-  },
-  extended: 'object'
+  }
 }
-console.log(util.inspect(obj, false, null))
+console.log(util.inspect(obj, { showHidden: false, depth: null }))
+
+// { it: 'will', print: { out: { the: [ 'full', 'object' ] } } }
 ```
