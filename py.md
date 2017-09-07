@@ -143,3 +143,9 @@ True
 3 eat
 4 shit
 ```
+
+```python
+# re to check whether a string contains Chinese character or not
+import re
+re.search(u'[\u4e00-\u9fff]', 'hen想下班')
+```
