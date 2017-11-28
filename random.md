@@ -5,3 +5,5 @@
     RTT - round-trip time
 
     WIP - work in progress
+
+    SOA - service-oriented architecture
